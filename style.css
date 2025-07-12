@@ -46,8 +46,8 @@ window#waybar {
 }
 #workspaces button {
     margin: 0 5px;
-    padding: 0 5px;
-    font-size: 28px;
+    min-width: 30px;
+    font-size: 20px;
     color: rgba(60, 68, 75, 255);
     background: radial-gradient(
         circle,
