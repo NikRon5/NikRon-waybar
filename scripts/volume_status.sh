@@ -1,6 +1,8 @@
 #!/bin/bash
 
-pkill -f "pw-mon.*volume" 2>/dev/null || true
+pkill -f "^bash.*volume_control.sh" || true
+
+trap "pkill -P $$; exit 0" SIGTERM SIGINT SIGQUIT
 
 source ~/.config/waybar/scripts/json_tool.sh
 
