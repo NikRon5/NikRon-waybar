@@ -16,7 +16,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    margin: 0 10px 3px 10px;
+    margin: 0 15px;
+    /* background-color: yellow; */
 }
 
 /* MODULES center */
@@ -25,16 +26,10 @@ window#waybar {
 }
 
 /* MODULES right */
-#backlight,
-#battery,
-#custom-volume,
-#language,
-#memory,
-#network,
-#clock {
-    min-width: 20px;
-    padding: 0 10px;
+.modules-right * {
     font-size: 20px;
+    min-width: 20px;
+    padding: 8px 10px;
     margin: 0 2px;
 }
 
