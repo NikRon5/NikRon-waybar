@@ -1,5 +1,9 @@
 #!/bin/bash
 
+pkill -f "^bash.*volume_control.sh" || true
+
+trap "pkill -P $$; exit 0" SIGTERM SIGINT SIGQUIT
+
 source ~/.config/waybar/scripts/json_tool.sh
 
 get_volume() {
