@@ -1,0 +1,24 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top", // Waybar at top layer
+  "output": ["eDP-1"],
+  "position": "top", // Waybar position (top|bottom|left|right)
+  //"height": 35, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+
+  // Choose the order of the modules
+  "modules-left": ["custom/arch", "hyprland/workspaces"],
+  "modules-center": ["mpris"],
+  "modules-right": [
+    "backlight",
+    "custom/volume",
+    "battery",
+    "network",
+    "memory",
+    "hyprland/language",
+    "clock",
+  ],
+  //Modules configuration
+
+  "include": ["~/.config/waybar/modules.json"],
+}

@@ -1,0 +1,114 @@
+{
+  "custom/arch": {
+    "format": "󰣇",
+    "tooltip": false,
+    "on_click": ""
+  },
+
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": [1, 2, 3]
+    }
+  },
+
+  "mpris": {
+    "format": "{status_icon} {artist} - {title} <sub></sub> ",
+    "interval": 1,
+    "dynamic-len": 40,
+    "status-icons": {
+      "playing": "▶",
+      "paused": "⏸",
+      "stopped": ""
+    },
+    "ignored-players": ["firefox"]
+  },
+
+  "backlight": {
+    "interval": 1,
+    "format": "{icon}",
+    "format-icons": ["󰃞", "󰃠"],
+    "tooltip-format": "Brightness: {percent}%",
+    "reverse-scrolling": true,
+    "reverse-mouse-scrolling": true,
+    "scroll-step": 1
+  },
+  "custom/volume": {
+    "exec": "~/.config/waybar/scripts/volume_status.sh",
+    "return-type": "json",
+    "signal": 1,
+    "restart-interval": 5,
+    "on-click": "~/.config/waybar/scripts/volume_control.sh toggle",
+    "on-scroll-up": "~/.config/waybar/scripts/volume_control.sh up",
+    "on-scroll-down": "~/.config/waybar/scripts/volume_control.sh down",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 0.3
+  },
+  "custom/vpn": {
+    "format": "󰌆",
+    "exec": "echo '{\"class\": \"connected\"}'",
+    "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+    "return-type": "json",
+    "interval": 5
+  },
+  "battery": {
+    "interval": 1,
+    "format": "{icon}",
+    "format-full": "{icon}",
+    "format-icons": {
+      "discharging": ["󱃍", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "not-charging": ["󱃍", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "plugged": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    },
+    "tooltip-format": "Battery: {capacity}% \n{time} \n{power} watts "
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU",
+    "keyboard-name": "at-translated-set-2-keyboard"
+  },
+  "memory": {
+    "interval": 30,
+    "format": "",
+    "max-length": 10,
+    "tooltip-format": "Memory: {percentage}%\n{used}/{total} GB"
+  },
+  "network": {
+    "interface": "wlan0",
+    "format": "{icon}",
+    "format-ethernet": "",
+    "format-linked": "󰌘",
+    "format-icons": {
+      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+    "format-disconnected": "󰌙",
+    "tooltip-format-wifi": "WiFi:\n{essid} ({signalStrength}%)\n{ipaddr}",
+    "tooltip-format-ethernet": "Ethernet:\n{essid} ({signalStrength}%)\n{ipaddr}",
+    "tooltip-format-linked": "Linked",
+    "tooltip-format-disconnected": "No internet connection",
+    "tooltip-format-disabled": "Interface is disabled"
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "mounth",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
+    }
+  }
+}

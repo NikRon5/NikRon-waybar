@@ -1,0 +1,79 @@
+/* DEFAULTS */
+* {
+    font-family: "CodeNewRoman Nerd Font Propo";
+    border: none;
+    border-radius: 0;
+    font-style: normal;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+window#waybar {
+    background: rgba(1, 1, 1, 0.9);
+    border-radius: 0 0 14px 14px;
+    color: #cdd6f4;
+}
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 0 10px 3px 10px;
+}
+
+/* MODULES center */
+#mpris {
+    font-size: 20px;
+}
+
+/* MODULES right */
+#backlight,
+#battery,
+#custom-volume,
+#language,
+#memory,
+#network,
+#clock {
+    min-width: 20px;
+    padding: 0 10px;
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+/* WORKSPACES */
+#workspaces {
+    /* margin: 5px 5px; */
+    font-weight: normal;
+    font-style: normal;
+}
+#workspaces button {
+    /* padding: 3px 5px; */
+    min-height: 50px;
+    min-width: 50px;
+    margin: 0px 5px;
+    border-radius: 50%;
+    background-color: #2f354a;
+    transition: all 0.3s ease-in-out;
+}
+#workspaces button.active {
+    color: #cdd6f4;
+    background-color: #cdd6f4;
+    min-width: 40px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+#workspaces button:hover {
+    background-color: #cdd6f4;
+    color: #cdd6f4;
+    min-width: 40px;
+    background-size: 400% 400%;
+}
+
+/* ARCH LOGO */
+#custom-arch {
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 28px;
+    transition: color 0.5s;
+}
+#custom-arch:hover {
+    color: #1793d1;
+}
