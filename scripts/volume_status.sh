@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pkill -f "pw-mon.*volume" 2>/dev/null || true
+
 source ~/.config/waybar/scripts/json_tool.sh
 
 get_volume() {
