@@ -11,7 +11,7 @@
 window#waybar {
     background: rgba(24, 24, 28, 0.9);
     border-radius: 0 0 20px 20px;
-    color: rgba(245, 245, 245, 255);
+    color: rgba(245, 245, 245, 1);
 }
 .modules-left,
 .modules-center,
@@ -48,29 +48,29 @@ window#waybar {
     margin: 0 5px;
     min-width: 30px;
     font-size: 20px;
-    color: rgba(60, 68, 75, 255);
+    color: rgba(60, 68, 75, 1);
     background: radial-gradient(
         circle,
-        rgba(60, 68, 75, 255) 50%,
+        rgba(60, 68, 75, 1) 50%,
         transparent 8%
     );
     transition: all 0.2s ease-in-out;
 }
 #workspaces button.active {
-    color: rgba(225, 113, 148, 255);
+    color: rgba(225, 113, 148, 1);
     background: radial-gradient(
         circle,
-        rgba(225, 113, 148, 255) 50%,
+        rgba(225, 113, 148, 1) 50%,
         transparent 8%
     );
 }
 #workspaces button:hover {
     box-shadow: none;
     text-shadow: none;
-    color: rgba(225, 113, 148, 255);
+    color: rgba(225, 113, 148, 1);
     background: radial-gradient(
         circle,
-        rgba(225, 113, 148, 255) 50%,
+        rgba(225, 113, 148, 1) 50%,
         transparent 8%
     );
 }
