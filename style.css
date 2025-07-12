@@ -41,28 +41,22 @@ window#waybar {
 /* WORKSPACES */
 #workspaces {
     /* margin: 5px 5px; */
-    font-weight: normal;
-    font-style: normal;
 }
 #workspaces button {
-    /* padding: 3px 5px; */
-    min-height: 20px;
-    min-width: 20px;
-    margin: 0px 5px;
-    border-radius: 50%;
-    background-color: rgba(60, 68, 75, 255);
+    margin: 0 5px;
+    padding: 0 5px;
+    font-size: 30px;
+    color: rgba(60, 68, 75, 255);
     transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-    background-color: rgba(225, 113, 148, 255);
-    min-width: 40px;
-    background-size: 400% 400%;
+    color: rgba(225, 113, 148, 255);
 }
 #workspaces button:hover {
-    background-color: black;
-    color: black;
-    min-width: 60px;
-    background-size: 400% 400%;
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    color: rgba(225, 113, 148, 255);
 }
 
 /* ARCH LOGO */
