@@ -9,9 +9,9 @@
     padding: 0;
 }
 window#waybar {
-    background: rgba(1, 1, 1, 0.9);
+    background: rgba(24, 24, 28, 255);
     border-radius: 0 0 14px 14px;
-    color: #cdd6f4;
+    color: rgba(245, 245, 245, 255);
 }
 .modules-left,
 .modules-center,
@@ -46,24 +46,22 @@ window#waybar {
 }
 #workspaces button {
     /* padding: 3px 5px; */
-    min-height: 50px;
-    min-width: 50px;
+    min-height: 20px;
+    min-width: 20px;
     margin: 0px 5px;
     border-radius: 50%;
-    background-color: #2f354a;
+    background-color: rgba(60, 68, 75, 255);
     transition: all 0.3s ease-in-out;
 }
 #workspaces button.active {
-    color: #cdd6f4;
-    background-color: #cdd6f4;
+    background-color: rgba(225, 113, 148, 255);
     min-width: 40px;
     background-size: 400% 400%;
-    transition: all 0.3s ease-in-out;
 }
 #workspaces button:hover {
-    background-color: #cdd6f4;
-    color: #cdd6f4;
-    min-width: 40px;
+    background-color: black;
+    color: black;
+    min-width: 60px;
     background-size: 400% 400%;
 }
 
