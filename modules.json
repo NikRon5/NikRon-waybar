@@ -38,7 +38,7 @@
     "exec": "~/.config/waybar/scripts/volume_status.sh",
     "return-type": "json",
     "signal": 1,
-    "restart-interval": 5,
+    "interval": 5,
     "on-click": "~/.config/waybar/scripts/volume_control.sh toggle",
     "on-scroll-up": "~/.config/waybar/scripts/volume_control.sh up",
     "on-scroll-down": "~/.config/waybar/scripts/volume_control.sh down",
