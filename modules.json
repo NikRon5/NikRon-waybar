@@ -7,13 +7,8 @@
 
   "hyprland/workspaces": {
     "all-outputs": true,
-    "format": "{icon}",
+    "format": "󰄯",
     "on-click": "activate",
-    "format-icons": {
-      "urgent": "󰀨",
-      "active": "󰻂",
-      "default": "󰄯"
-    },
     "persistent-workspaces": {
       "*": [1, 2, 3]
     }
